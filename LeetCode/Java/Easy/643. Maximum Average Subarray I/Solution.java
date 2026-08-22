@@ -17,7 +17,6 @@ class Solution {
         System.out.println(s);
         int t=s;
         for(int i=k;i<n;i++){
-            // int t=s;
             t +=nums[i];
             t -=nums[i-k];
             System.out.println(t);
