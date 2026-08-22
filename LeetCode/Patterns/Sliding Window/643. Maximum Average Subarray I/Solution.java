@@ -1,12 +1,12 @@
 class Solution {
     public double findMaxAverage(int[] nums, int k) {
-        if(k==1){
-            int la=nums[0];
-            for(int i=1;i<nums.length;i++){
-                la=Math.max(la,nums[i]);
-            }
-            return (double)la;
-        }
+        // if(k==1){
+        //     int la=nums[0];
+        //     for(int i=1;i<nums.length;i++){
+        //         la=Math.max(la,nums[i]);
+        //     }
+        //     return (double)la;
+        // }
         int n=nums.length;
         int s=0;
         double la=0;
@@ -15,13 +15,14 @@ class Solution {
         }
         // la=s/4;
         System.out.println(s);
+        int t=s;
         for(int i=k;i<n;i++){
-            int t=s;
+            // int t=s;
             t +=nums[i];
             t -=nums[i-k];
             System.out.println(t);
             s=Math.max(s,t);
-            // System.out.println(s);
+            System.out.println(s);
         }
         System.out.println(s);
         la=(double)s/k;
