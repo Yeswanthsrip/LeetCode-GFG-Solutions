@@ -1,7 +1,7 @@
 class Solution {
     public List<List<Integer>> minimumAbsDifference(int[] arr) {
         Arrays.sort(arr);
-        int md=999;
+        int md=Integer.MAX_VALUE;
         int n=arr.length;
         for(int i=0;i<n-1;i++){
             if(Math.abs(arr[i]-arr[i+1])<md){
