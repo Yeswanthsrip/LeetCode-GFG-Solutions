@@ -1,6 +1,6 @@
 # 📝 586. Customer Placing the Largest Number of Orders (LeetCode)
 
-🔗 [Problem Link](https://leetcode.com/problems/customer-placing-the-largest-number-of-orders)
+🔗 [Problem Link](https://leetcode.com/problems/customer-placing-the-largest-number-of-orders/?envType=problem-list-v2&envId=m8baczxh)
 
 ![Difficulty](https://img.shields.io/badge/Difficulty-Easy-brightgreen) ![Language](https://img.shields.io/badge/Language-SQL-blue)
 
