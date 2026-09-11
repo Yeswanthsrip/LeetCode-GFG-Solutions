@@ -1,2 +1,2 @@
 select name,population,area from world
-where population>24999999 or area > 25000000;
+where area >= 3000000 or population >= 25000000;
