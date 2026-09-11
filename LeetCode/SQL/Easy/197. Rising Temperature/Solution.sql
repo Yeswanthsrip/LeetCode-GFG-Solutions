@@ -1,0 +1,1 @@
+select id from (select id,temperature,lag(temperature) over(order by recordDate) as prev_temp from weather) as t where temperature>prev_temp;
