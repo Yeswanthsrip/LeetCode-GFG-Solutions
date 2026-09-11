@@ -1,6 +1,6 @@
 # 📝 183. Customers Who Never Order (LeetCode)
 
-🔗 [Problem Link](https://leetcode.com/problems/customers-who-never-order/?envType=problem-list-v2&envId=m8baczxh)
+🔗 [Problem Link](https://leetcode.com/problems/customers-who-never-order/)
 
 ![Difficulty](https://img.shields.io/badge/Difficulty-Easy-brightgreen) ![Language](https://img.shields.io/badge/Language-SQL-blue)
 
@@ -8,8 +8,8 @@
 Database
 
 ### 🚀 Performance
-- **Runtime:** N/A
-- **Memory:** N/A
+- **Runtime:** 613 ms
+- **Memory:** 0B
 
 ---
 
