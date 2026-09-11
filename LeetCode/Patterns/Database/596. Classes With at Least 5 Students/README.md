@@ -1,6 +1,6 @@
 # 📝 596. Classes With at Least 5 Students (LeetCode)
 
-🔗 [Problem Link](https://leetcode.com/problems/classes-with-at-least-5-students/?envType=problem-list-v2&envId=m8baczxh)
+🔗 [Problem Link](https://leetcode.com/problems/classes-with-at-least-5-students/)
 
 ![Difficulty](https://img.shields.io/badge/Difficulty-Easy-brightgreen) ![Language](https://img.shields.io/badge/Language-SQL-blue)
 
