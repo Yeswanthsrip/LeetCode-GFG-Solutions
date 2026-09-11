@@ -1,6 +1,6 @@
 # 📝 595. Big Countries (LeetCode)
 
-🔗 [Problem Link](https://leetcode.com/problems/big-countries/)
+🔗 [Problem Link](https://leetcode.com/problems/big-countries/?envType=problem-list-v2&envId=m8baczxh)
 
 ![Difficulty](https://img.shields.io/badge/Difficulty-Easy-brightgreen) ![Language](https://img.shields.io/badge/Language-SQL-blue)
 
