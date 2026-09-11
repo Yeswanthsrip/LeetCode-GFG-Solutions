@@ -1,6 +1,6 @@
 # 📝 570. Managers with at Least 5 Direct Reports (LeetCode)
 
-🔗 [Problem Link](https://leetcode.com/problems/managers-with-at-least-5-direct-reports/?envType=problem-list-v2&envId=m8baczxh)
+🔗 [Problem Link](https://leetcode.com/problems/managers-with-at-least-5-direct-reports/)
 
 ![Difficulty](https://img.shields.io/badge/Difficulty-Medium-orange) ![Language](https://img.shields.io/badge/Language-SQL-blue)
 
