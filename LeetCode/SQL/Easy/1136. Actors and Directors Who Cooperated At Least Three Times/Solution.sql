@@ -1,6 +1,14 @@
 select actor_id,director_id from(
-    select actor_id,director_id 
+    select actor_id,director_id,
+        count(*) over(partition by actor_id,director_id)as count_ad
         from actordirector
-            where actor_id=director_id
 ) t
+    where count_ad>2
     group by actor_id,director_id;
+
+-- select actor_id,director_id from actordirector 
+-- GROUP BY actor_id,director_id;
+
+-- select actor_id,director_id,
+--         count(*) over(partition by actor_id,director_id)as count_ad
+--         from actordirector;
