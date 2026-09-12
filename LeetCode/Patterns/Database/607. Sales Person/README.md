@@ -1,6 +1,6 @@
 # 📝 607. Sales Person (LeetCode)
 
-🔗 [Problem Link](https://leetcode.com/problems/sales-person/?envType=problem-list-v2&envId=m8baczxh)
+🔗 [Problem Link](https://leetcode.com/problems/sales-person/)
 
 ![Difficulty](https://img.shields.io/badge/Difficulty-Easy-brightgreen) ![Language](https://img.shields.io/badge/Language-SQL-blue)
 
@@ -8,8 +8,8 @@
 Database
 
 ### 🚀 Performance
-- **Runtime:** N/A
-- **Memory:** N/A
+- **Runtime:** 1265 ms
+- **Memory:** 0B
 
 ---
 
