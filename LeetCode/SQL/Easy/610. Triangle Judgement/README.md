@@ -1,6 +1,6 @@
 # 📝 610. Triangle Judgement (LeetCode)
 
-🔗 [Problem Link](https://leetcode.com/problems/triangle-judgement)
+🔗 [Problem Link](https://leetcode.com/problems/triangle-judgement/?envType=problem-list-v2&envId=m8baczxh)
 
 ![Difficulty](https://img.shields.io/badge/Difficulty-Easy-brightgreen) ![Language](https://img.shields.io/badge/Language-SQL-blue)
 
