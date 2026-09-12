@@ -1,6 +1,6 @@
 # 📝 610. Triangle Judgement (LeetCode)
 
-🔗 [Problem Link](https://leetcode.com/problems/triangle-judgement/?envType=problem-list-v2&envId=m8baczxh)
+🔗 [Problem Link](https://leetcode.com/problems/triangle-judgement/)
 
 ![Difficulty](https://img.shields.io/badge/Difficulty-Easy-brightgreen) ![Language](https://img.shields.io/badge/Language-SQL-blue)
 
@@ -8,8 +8,8 @@
 Database
 
 ### 🚀 Performance
-- **Runtime:** N/A
-- **Memory:** N/A
+- **Runtime:** 295 ms
+- **Memory:** 0B
 
 ---
 
