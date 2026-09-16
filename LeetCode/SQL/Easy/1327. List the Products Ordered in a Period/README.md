@@ -1,6 +1,6 @@
 # 📝 1327. List the Products Ordered in a Period (LeetCode)
 
-🔗 [Problem Link](https://leetcode.com/problems/list-the-products-ordered-in-a-period/?envType=problem-list-v2&envId=m8baczxh)
+🔗 [Problem Link](https://leetcode.com/problems/list-the-products-ordered-in-a-period)
 
 ![Difficulty](https://img.shields.io/badge/Difficulty-Easy-brightgreen) ![Language](https://img.shields.io/badge/Language-SQL-blue)
 
