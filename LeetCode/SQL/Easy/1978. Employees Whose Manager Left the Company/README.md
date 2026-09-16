@@ -1,6 +1,6 @@
 # 📝 1978. Employees Whose Manager Left the Company (LeetCode)
 
-🔗 [Problem Link](https://leetcode.com/problems/employees-whose-manager-left-the-company)
+🔗 [Problem Link](https://leetcode.com/problems/employees-whose-manager-left-the-company/?envType=problem-list-v2&envId=m8baczxh)
 
 ![Difficulty](https://img.shields.io/badge/Difficulty-Easy-brightgreen) ![Language](https://img.shields.io/badge/Language-SQL-blue)
 
