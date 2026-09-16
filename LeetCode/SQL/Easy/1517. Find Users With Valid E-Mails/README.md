@@ -1,6 +1,6 @@
 # 📝 1517. Find Users With Valid E-Mails (LeetCode)
 
-🔗 [Problem Link](https://leetcode.com/problems/find-users-with-valid-e-mails)
+🔗 [Problem Link](https://leetcode.com/problems/find-users-with-valid-e-mails/?envType=problem-list-v2&envId=m8baczxh)
 
 ![Difficulty](https://img.shields.io/badge/Difficulty-Easy-brightgreen) ![Language](https://img.shields.io/badge/Language-SQL-blue)
 
