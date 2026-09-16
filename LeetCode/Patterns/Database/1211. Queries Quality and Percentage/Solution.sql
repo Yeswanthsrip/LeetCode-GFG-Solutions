@@ -6,7 +6,7 @@ select query_name,
             avg(rating/position) over(partition by query_name) as quality,
             sum(
                 case
-                    when rating<3 then (1/3)*100
+                    when rating<3 then (1/)*100
                     else 0
                 end
             ) over (partition by query_name) as poor_query_percentage
