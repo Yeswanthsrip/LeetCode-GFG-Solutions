@@ -14,6 +14,6 @@ from employees e
     where employee_id in (
         select reports_to
             from employees
-            where reports_to>0
+            where reports_to is not null
     )
 order by employee_id;
