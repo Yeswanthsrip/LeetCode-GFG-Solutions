@@ -1,4 +1,4 @@
-select l1.num as consecutiveNums
+select distinct l1.num as consecutiveNums
 from logs l1 join logs l2
     on l1.id=l2.id+1
     join logs l3
