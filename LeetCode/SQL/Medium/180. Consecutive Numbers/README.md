@@ -1,6 +1,6 @@
 # 📝 180. Consecutive Numbers (LeetCode)
 
-🔗 [Problem Link](https://leetcode.com/problems/consecutive-numbers/?envType=problem-list-v2&envId=m8baczxh)
+🔗 [Problem Link](https://leetcode.com/problems/consecutive-numbers/)
 
 ![Difficulty](https://img.shields.io/badge/Difficulty-Medium-orange) ![Language](https://img.shields.io/badge/Language-SQL-blue)
 
@@ -8,8 +8,8 @@
 Database
 
 ### 🚀 Performance
-- **Runtime:** N/A
-- **Memory:** N/A
+- **Runtime:** 564 ms
+- **Memory:** 0B
 
 ---
 
