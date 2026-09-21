@@ -1,6 +1,6 @@
 # 📝 11. Container With Most Water (LeetCode)
 
-🔗 [Problem Link](https://leetcode.com/problems/container-with-most-water/?envType=problem-list-v2&envId=two-pointers)
+🔗 [Problem Link](https://leetcode.com/problems/container-with-most-water/)
 
 ![Difficulty](https://img.shields.io/badge/Difficulty-Medium-orange) ![Language](https://img.shields.io/badge/Language-Java-blue)
 
