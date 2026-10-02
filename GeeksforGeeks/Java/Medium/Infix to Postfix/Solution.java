@@ -27,44 +27,31 @@ class Solution {
                 }
                 else{
                     if(ch=='+'){
-                        while(!st.isEmpty() && (st.peek()=='*' || st.peek()=='/' || st.peek()=='^')){
-                            sb.append(st.pop());
-                        }
-                        while(!st.isEmpty() && (st.peek()=='+' || st.peek()=='-')){
+                        while(!st.isEmpty() && (st.peek()=='*' || st.peek()=='/' || st.peek()=='^'
+                        || st.peek()=='+' || st.peek()=='-')){
                             sb.append(st.pop());
                         }
                         st.push(ch);
                     }
                     else if(ch=='-'){
-                        while(!st.isEmpty() && (st.peek()=='*' || st.peek()=='/' || st.peek()=='^')){
-                            sb.append(st.pop());
-                        }
-                        while(!st.isEmpty() && (st.peek()=='+' || st.peek()=='-')){
+                        while(!st.isEmpty() && (st.peek()=='*' || st.peek()=='/' || st.peek()=='^'
+                        || st.peek()=='+' || st.peek()=='-')){
                             sb.append(st.pop());
                         }
                         st.push(ch);
                     }
                     else if(ch=='*'){
-                        while(!st.isEmpty() && (st.peek()=='^')){
-                            sb.append(st.pop());
-                        }
-                        while(!st.isEmpty() && (st.peek()=='/' || st.peek()=='*')){
+                        while(!st.isEmpty() && (st.peek()=='^' || st.peek()=='/' || st.peek()=='*')){
                             sb.append(st.pop());
                         }
                         st.push(ch);
                     }
                     else if(ch=='/'){
-                        while(!st.isEmpty() && (st.peek()=='^')){
-                            sb.append(st.pop());
-                        }
-                        while(!st.isEmpty() && (st.peek()=='/' || st.peek()=='*')){
+                        while(!st.isEmpty() && (st.peek()=='^' || st.peek()=='/' || st.peek()=='*')){
                             sb.append(st.pop());
                         }
                         st.push(ch);
                     }
-                    // else{
-                    //     st.push
-                    // }
                 }
             }
         }
