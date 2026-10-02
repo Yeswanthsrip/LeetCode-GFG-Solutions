@@ -26,27 +26,14 @@ class Solution {
                     st.push(ch);
                 }
                 else{
-                    if(ch=='+'){
+                    if(ch=='+' || ch=='-'){
                         while(!st.isEmpty() && (st.peek()=='*' || st.peek()=='/' || st.peek()=='^'
                         || st.peek()=='+' || st.peek()=='-')){
                             sb.append(st.pop());
                         }
                         st.push(ch);
                     }
-                    else if(ch=='-'){
-                        while(!st.isEmpty() && (st.peek()=='*' || st.peek()=='/' || st.peek()=='^'
-                        || st.peek()=='+' || st.peek()=='-')){
-                            sb.append(st.pop());
-                        }
-                        st.push(ch);
-                    }
-                    else if(ch=='*'){
-                        while(!st.isEmpty() && (st.peek()=='^' || st.peek()=='/' || st.peek()=='*')){
-                            sb.append(st.pop());
-                        }
-                        st.push(ch);
-                    }
-                    else if(ch=='/'){
+                    else{
                         while(!st.isEmpty() && (st.peek()=='^' || st.peek()=='/' || st.peek()=='*')){
                             sb.append(st.pop());
                         }
