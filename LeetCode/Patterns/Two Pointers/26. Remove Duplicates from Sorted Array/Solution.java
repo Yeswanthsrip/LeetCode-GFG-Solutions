@@ -7,7 +7,6 @@ class Solution {
                 hs.add(nums[i]);
             }
         }
-        // int k[]=new int[hs.size()];
         int i=0;
         for(int x:hs){
             nums[i++]=x;
