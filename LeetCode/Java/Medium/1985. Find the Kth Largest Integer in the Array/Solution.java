@@ -3,7 +3,7 @@ class Solution {
         int n=nums.length;
         long a[]=new long[n];
         for(int i=0;i<n;i++){
-            a[i]=Integer.parseLong(nums[i]);
+            a[i]=Long.parseLong(nums[i]);
         }
         Arrays.sort(a);
         return String.valueOf(a[n-k]);
