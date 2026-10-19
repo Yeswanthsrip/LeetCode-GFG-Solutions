@@ -3,6 +3,7 @@ class Solution {
         int n=nums.length;
         int fe=nums[0];
         int i=0;
+        int c
         for(i=1;i<n;i++){
             if(nums[i]<fe){
                 break;
@@ -10,6 +11,6 @@ class Solution {
         }
         if(i==n)
             return true;
-        return (fe>nums[n-1])?true:false;
+        return (fe>=nums[n-1])?true:false;
     }
 }
