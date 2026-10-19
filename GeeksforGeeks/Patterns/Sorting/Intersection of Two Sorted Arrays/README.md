@@ -1,11 +1,11 @@
 # 📝 Intersection of Two Sorted Arrays (GeeksforGeeks)
 
-🔗 [Problem Link](https://www.geeksforgeeks.org/problems/intersection-of-two-sorted-array-1587115620/1)
+🔗 [Problem Link](https://www.geeksforgeeks.org/problems/intersection-of-two-sorted-arrays-with-duplicate-elements/1)
 
 ![Difficulty](https://img.shields.io/badge/Difficulty-Easy-brightgreen) ![Language](https://img.shields.io/badge/Language-Java-blue)
 
 ### 💡 Tags
-Arrays, Sorting
+Sorting, Arrays
 
 ### 🚀 Performance
 - **Runtime:** Successfully Evaluated
@@ -15,30 +15,30 @@ Arrays, Sorting
 
 ### 📜 Problem Description
 
-Given two sorted arrays  **arr1** [] and  **arr** 2[]. Your task is to return the  **intersection** of both arrays.
-Intersection of two arrays is said to be elements that are common in both arrays. The intersection should not count duplicate elements.
-Note: If there is no intersection then return an empty array.
+Given two  **sorted**  arrays  **a[]**  and  **b[]** , where each array may contain duplicate elements, return the elements in the  **intersection**  of the two arrays in  **sorted**  order.
 
-**Examples**  **:**
+**Note:**  Intersection of two arrays can be defined as the set containing distinct common elements that are present in both of the arrays.
+
+**Examples:**
 
 ```
-Input: arr1[] = [1, 2, 3, 4], arr2[] = [2, 4, 6, 7, 8]
+Input: a[] = [1, 1, 2, 2, 2, 4], b[] = [2, 2, 4, 4]
 Output: [2, 4]
-Explanation: 2 and 4 are only common elements in both the arrays.
+Explanation: Distinct common elements in both the arrays are: 2 and 4.
 ```
 
 ```
-Input: arr1[] = [1, 2, 2, 3, 4], arr2[] = [2, 2, 4, 6, 7, 8]
-Output: [2, 4]
-Explanation: 2 and 4 are the only common elements.
-```
-
-```
-Input: arr1[] = [1, 2], arr2[] = [3, 4]
+Input: a[] = [1, 2], b[] = [3, 4]
 Output: []
 Explanation: No common elements.
 ```
 
+```
+Input: a[] = [1, 2, 3], b[] = [1, 2, 3]
+Output: [1, 2, 3]
+Explanation: All elements are common.
+```
+
 **Constraints:** 
-1 ≤ arr1.size(),arr2.size() ≤ 105
-1 ≤ arr1[i], arr2[i] ≤ 106
+1 ≤ a.size(), b.size() ≤ 105
+-109 ≤ a[i], b[i] ≤ 109
