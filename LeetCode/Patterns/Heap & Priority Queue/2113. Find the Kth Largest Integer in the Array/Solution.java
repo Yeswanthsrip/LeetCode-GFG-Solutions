@@ -1,11 +1,15 @@
+class sortNums implements Comparator<String>{
+    public int compare(String s1,String s2){
+        if(s1.length()!=s2.length()){
+            return s2.length()-s1.length();
+        }
+        return s2.compareTo(s1);
+    }
+}
 class Solution {
     public String kthLargestNumber(String[] nums, int k) {
         int n=nums.length;
-        int a[]=new int[n];
-        for(int i=0;i<n;i++){
-            a[i]=Integer.parseInt(nums[i]);
-        }
-        Arrays.sort(a);
-        return String.valueOf(a[n-k]);
+        Arrays.sort(nums,new sortNums());
+        return nums[k-1];
     }
 }
