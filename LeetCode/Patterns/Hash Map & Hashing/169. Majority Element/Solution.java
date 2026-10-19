@@ -1,17 +1,18 @@
 class Solution {
     public int majorityElement(int[] arr) {
-        int n=(int)(arr.length/2);
+        int n=arr.length;
+        int mid=(int)Math.floor(n/2);
         HashMap<Integer,Integer> hm=new HashMap<>();
-        for(int x:arr){
-            if(hm.containsKey(x)){
-                hm.put(x,hm.get(x)+1);
-            }
-            else{
-                hm.put(x,1);
-            }
-            if(hm.get(x)>n)
-                return x;
+        for(int i=0;i<n;i++){
+            hm.put(arr[i],hm.getOrDefault(arr[i],0)+1);
         }
-        return -1;
+        for(Map.Entry<Integer,Integer> e:hm.entrySet()){
+            Integer k=e.getKey();
+            Integer v=e.getValue();
+            if(v>mid){
+                return k;
+            }
+        }
+        return 91;
     }
 }
