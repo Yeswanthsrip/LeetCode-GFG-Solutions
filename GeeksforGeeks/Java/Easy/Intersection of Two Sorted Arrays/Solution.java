@@ -1,5 +1,5 @@
 class Solution {
-    static ArrayList<Integer> intersection(int a[], int b[]) {
+    ArrayList<Integer> intersection(int[] a, int[] b) {
         int m=a.length,n=b.length;
         int i=0,j=0;
         ArrayList<Integer> la=new ArrayList<>();
