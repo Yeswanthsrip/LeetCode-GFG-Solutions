@@ -11,6 +11,5 @@ class Solution {
         if(i==n)
             return true;
         return (fe>nums[n-1])?true:false;
-        // return false;
     }
 }
