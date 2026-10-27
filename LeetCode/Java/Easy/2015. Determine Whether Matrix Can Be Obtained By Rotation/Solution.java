@@ -15,7 +15,6 @@ class Solution {
         l=n*n;
         for(int i=0;i<n;i++){
             for(int j=0;j<n;j++){
-                // System.out.println(start.get(i).get(j)+" "+goal.get(n-j-1).get(i));
                 if(start[i][j]==goal[n-j-1][i]){
                     l--;
                 }
@@ -27,7 +26,6 @@ class Solution {
         l=n*n;
         for(int i=0;i<n;i++){
             for(int j=0;j<n;j++){
-                // System.out.println(start.get(i).get(j)+" "+goal.get(n-j-1).get(i));
                 if(start[i][j]==goal[j][n-i-1]){
                     l--;
                 }
@@ -39,7 +37,6 @@ class Solution {
         l=n*n;
         for(int i=0;i<n;i++){
             for(int j=0;j<n;j++){
-                // System.out.println(start.get(i).get(j)+" "+goal.get(n-i-1).get(j));
                 if(start[i][j]==goal[n-i-1][n-j-1]){
                     l--;
                 }
@@ -51,7 +48,6 @@ class Solution {
         l=n*n;
         for(int i=0;i<n;i++){
             for(int j=0;j<n;j++){
-                // System.out.println(start.get(i).get(j)+" "+goal.get(n-i-1).get(j));
                 if(start[i][j]==goal[n-i-1][j]){
                     l--;
                 }
