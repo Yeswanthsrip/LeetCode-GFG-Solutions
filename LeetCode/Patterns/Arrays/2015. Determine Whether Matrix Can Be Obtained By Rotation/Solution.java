@@ -11,60 +11,23 @@ class Solution {
         }
         if(l==0)
             return true;
-        //1st
-        int l1=n*n;
-        int l2=l1,l3=l1,l4=l1;
+        boolean la1=true,la2=true,la3=true,la4=true;
         for(int i=0;i<n;i++){
             for(int j=0;j<n;j++){
-                if(start[i][j]==goal[n-j-1][i]){
-                    l1--;
+                if(la1 && start[i][j]!=goal[n-j-1][i]){
+                    la1=false;
                 }
-                if(start[i][j]==goal[j][n-i-1]){
-                    l2--;
+                if(la2 && start[i][j]!=goal[j][n-i-1]){
+                    la2=false;
                 }
-                if(start[i][j]==goal[n-i-1][n-j-1]){
-                    l3--;
+                if(la3 && start[i][j]!=goal[n-i-1][n-j-1]){
+                    la3=false;
                 }
-                if(start[i][j]==goal[n-i-1][j]){
-                    l4--;
+                if(la4 && start[i][j]!=goal[n-i-1][j]){
+                    la4=false;
                 }
             }
         }
-        if(l1==0 || l2==0 || l3==0 || l4==0)
-            return true;
-        //2nd
-        // l=n*n;
-        // for(int i=0;i<n;i++){
-        //     for(int j=0;j<n;j++){
-        //         if(start[i][j]==goal[j][n-i-1]){
-        //             l--;
-        //         }
-        //     }
-        // }
-        // if(l==0)
-        //     return true;
-        // //3rd
-        // l=n*n;
-        // for(int i=0;i<n;i++){
-        //     for(int j=0;j<n;j++){
-        //         if(start[i][j]==goal[n-i-1][n-j-1]){
-        //             l--;
-        //         }
-        //     }
-        // }
-        // if(l==0)
-        //     return true;
-        // //4th
-        // l=n*n;
-        // for(int i=0;i<n;i++){
-        //     for(int j=0;j<n;j++){
-        //         if(start[i][j]==goal[n-i-1][j]){
-        //             l--;
-        //         }
-        //     }
-        // }
-        // if(l==0)
-        //     return true;
-        return false;
+        return la1 || la2 || la3 || la4;
     }
 }
