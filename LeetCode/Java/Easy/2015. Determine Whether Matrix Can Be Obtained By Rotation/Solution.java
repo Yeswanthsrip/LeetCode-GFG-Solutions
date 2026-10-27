@@ -1,8 +1,18 @@
 class Solution {
     public boolean findRotation(int[][] start, int[][] goal) {
         int n=start.length;
-        //1st
         int l=n*n;
+        for(int i=0;i<n;i++){
+            for(int j=0;j<n;j++){
+                if(start[i][j]==goal[i][j]){
+                    l--;
+                }
+            }
+        }
+        if(l==0)
+            return true;
+        //1st
+        l=n*n;
         for(int i=0;i<n;i++){
             for(int j=0;j<n;j++){
                 // System.out.println(start.get(i).get(j)+" "+goal.get(n-j-1).get(i));
