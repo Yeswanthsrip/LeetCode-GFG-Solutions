@@ -1,6 +1,6 @@
 # 📝 1886. Determine Whether Matrix Can Be Obtained By Rotation (LeetCode)
 
-🔗 [Problem Link](https://leetcode.com/problems/determine-whether-matrix-can-be-obtained-by-rotation)
+🔗 [Problem Link](https://leetcode.com/problems/determine-whether-matrix-can-be-obtained-by-rotation/)
 
 ![Difficulty](https://img.shields.io/badge/Difficulty-Easy-brightgreen) ![Language](https://img.shields.io/badge/Language-Java-blue)
 
