@@ -8,9 +8,8 @@ class Solution {
         int i=0,j=0,k=0;
         while(i<n1 && j<n2 && k<n3){
             if(nums1[i]==nums2[j] && nums2[j]==nums3[k]){
-                if(!hs.contains(nums1[i])){
+                if(hs.add(nums1[i])){
                     la.add(nums1[i]);
-                    hs.add(nums1[i]);
                 }
                 i++;
                 j++;
