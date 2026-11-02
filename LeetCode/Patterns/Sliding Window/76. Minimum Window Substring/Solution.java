@@ -57,7 +57,7 @@ class Solution {
             System.out.println(thm);
             System.out.println("................................");
         }
-        if(pi==Integer.MIN_VALUE)
+        if(pi==-1)
             return "";
         StringBuffer sb=new StringBuffer();
         for(int x=pi;x<=pj;x++){
