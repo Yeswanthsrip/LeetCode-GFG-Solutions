@@ -28,10 +28,30 @@ class Solution {
                         al.remove(Character.valueOf(ch[i]));
                     }
                     i++;
+                    if(al.size()==t.length()){
+                        if(pi==-1 && pj==-1){
+                            pi=i;
+                            pj=j;
+                        }
+                        else if((j-i)<(pj-pi)){
+                            pi=i;
+                            pj=j;
+                        }
+                    }
                 }
-                while(!al.contains(ch[i])){
+                while(i<n && !al.contains(ch[i])){
                     thm.put(ch[i],thm.getOrDefault(ch[i],0)-1);
                     i++;
+                    if(al.size()==t.length()){
+                        if(pi==-1 && pj==-1){
+                            pi=i;
+                            pj=j;
+                        }
+                        else if((j-i)<(pj-pi)){
+                            pi=i;
+                            pj=j;
+                        }
+                    }
                 }
             }
             else{
