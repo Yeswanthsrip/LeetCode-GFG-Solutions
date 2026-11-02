@@ -2,127 +2,59 @@ class Solution {
     public String minWindow(String s, String t) {
         if(s.length()<t.length())
             return "";
+
         HashMap<Character,Integer> hm=new HashMap<>();
+
         for(char x:t.toCharArray()){
             hm.put(x,hm.getOrDefault(x,0)+1);
         }
-        // System.out.println(hm);
-        ArrayList<Character> al=new ArrayList<>();
-        int la=0;
+
         int pi=-1,pj=-1;
         int i=0,j=0;
         int n=s.length();
+
         HashMap<Character,Integer> thm=new HashMap<>();
+        HashMap<Character,Integer> chm=new HashMap<>();
+
         char ch[]=s.toCharArray();
+
         while(j<n){
-            if(al.size()==t.length()){
-                if((j-i)<(pj-pi)){
+
+            thm.put(ch[j],thm.getOrDefault(ch[j],0)+1);
+
+            if(hm.containsKey(ch[j])){
+                if(thm.get(ch[j])>=hm.get(ch[j])){
+                    chm.put(ch[j],1);
+                }
+            }
+
+            j++;
+
+            while(chm.size()==hm.size()){
+
+                if(pi==-1 || (j-i)<(pj-pi)){
                     pi=i;
                     pj=j;
                 }
-                while(!(al.size()!=t.length())){
-                    thm.put(ch[i],thm.getOrDefault(ch[i],0)-1);
-                    if(thm.get(ch[i])==0)
-                        thm.remove(ch[i]);
-                    if(hm.containsKey(ch[i])){
-                        al.remove(Character.valueOf(ch[i]));
-                    }
-                    i++;
-                    if(al.size()==t.length()){
-                        if(pi==-1 && pj==-1){
-                            pi=i;
-                            pj=j;
-                        }
-                        else if((j-i)<(pj-pi)){
-                            pi=i;
-                            pj=j;
-                        }
+
+                thm.put(ch[i],thm.get(ch[i])-1);
+
+                if(hm.containsKey(ch[i])){
+                    if(thm.get(ch[i])<hm.get(ch[i])){
+                        chm.remove(ch[i]);
                     }
                 }
-                while(i<n && !al.contains(ch[i])){
-                    thm.put(ch[i],thm.getOrDefault(ch[i],0)-1);
-                    i++;
-                    if(al.size()==t.length()){
-                        if(pi==-1 && pj==-1){
-                            pi=i;
-                            pj=j;
-                        }
-                        else if((j-i)<(pj-pi)){
-                            pi=i;
-                            pj=j;
-                        }
-                    }
-                }
+
+                if(thm.get(ch[i])==0)
+                    thm.remove(ch[i]);
+
+                i++;
             }
-            else{
-                if(hm.containsKey(ch[j])){
-                    al.add(ch[j]);
-                }
-                if(al.size()==t.length()){
-                    if(pi==-1 && pj==-1){
-                        pi=i;
-                        pj=j;
-                    }
-                    else if((j-i)<(pj-pi)){
-                        pi=i;
-                        pj=j;
-                    }
-                }
-                thm.put(ch[j],thm.getOrDefault(ch[j],0)+1);
-                j++;
-            }
-            System.out.println("i "+i+" j "+j);
-            System.out.println("pi "+pi+" pj "+pj);
-            System.out.println(al);
-            System.out.println(thm);
-            System.out.println("................................");
         }
-        if(al.size()==t.length()){
-                if((j-i)<(pj-pi)){
-                    pi=i;
-                    pj=j;
-                }
-                while(!(al.size()!=t.length())){
-                    thm.put(ch[i],thm.getOrDefault(ch[i],0)-1);
-                    if(thm.get(ch[i])==0)
-                        thm.remove(ch[i]);
-                    if(hm.containsKey(ch[i])){
-                        al.remove(Character.valueOf(ch[i]));
-                    }
-                    i++;
-                    if(al.size()==t.length()){
-                        if(pi==-1 && pj==-1){
-                            pi=i;
-                            pj=j;
-                        }
-                        else if((j-i)<(pj-pi)){
-                            pi=i;
-                            pj=j;
-                        }
-                    }
-                }
-                while(i<n && !al.contains(ch[i])){
-                    thm.put(ch[i],thm.getOrDefault(ch[i],0)-1);
-                    i++;
-                    if(al.size()==t.length()){
-                        if(pi==-1 && pj==-1){
-                            pi=i;
-                            pj=j;
-                        }
-                        else if((j-i)<(pj-pi)){
-                            pi=i;
-                            pj=j;
-                        }
-                    }
-                }
-            }
+
         if(pi==-1)
             return "";
-        StringBuffer sb=new StringBuffer();
-        for(int x=pi;x<=pj;x++){
-            sb.append(String.valueOf(ch[x]));
-        }
-        return sb.toString();
-        
+
+        return s.substring(pi,pj);
     }
 }
