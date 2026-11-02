@@ -77,6 +77,45 @@ class Solution {
             System.out.println(thm);
             System.out.println("................................");
         }
+        if(al.size()==t.length()){
+                if((j-i)<(pj-pi)){
+                    pi=i;
+                    pj=j;
+                }
+                while(!(al.size()!=t.length())){
+                    thm.put(ch[i],thm.getOrDefault(ch[i],0)-1);
+                    if(thm.get(ch[i])==0)
+                        thm.remove(ch[i]);
+                    if(hm.containsKey(ch[i])){
+                        al.remove(Character.valueOf(ch[i]));
+                    }
+                    i++;
+                    if(al.size()==t.length()){
+                        if(pi==-1 && pj==-1){
+                            pi=i;
+                            pj=j;
+                        }
+                        else if((j-i)<(pj-pi)){
+                            pi=i;
+                            pj=j;
+                        }
+                    }
+                }
+                while(i<n && !al.contains(ch[i])){
+                    thm.put(ch[i],thm.getOrDefault(ch[i],0)-1);
+                    i++;
+                    if(al.size()==t.length()){
+                        if(pi==-1 && pj==-1){
+                            pi=i;
+                            pj=j;
+                        }
+                        else if((j-i)<(pj-pi)){
+                            pi=i;
+                            pj=j;
+                        }
+                    }
+                }
+            }
         if(pi==-1)
             return "";
         StringBuffer sb=new StringBuffer();
